@@ -1646,7 +1646,18 @@ definition {
 			key_webContentContent = "${webContentContent}"
 		);
 	}
+ 	
+	macro viewExpirationDateCP {
+		Panel.expandPanel(panel = "Schedule");
 
+		AssertNotChecked(locator1 = "Checkbox#NEVER_EXPIRE", value1 = "Never Expire");
+
+		AssertTextEquals(
+			locator1 = "TextInput#EXPIRATION_DATE",
+			value1 = "${expirationDate}"
+		);
+	}
+	
 	macro viewFieldRepeated {
  		AssertTextEquals(
 			locator1 = "xpath=(//div[@data-fieldname='${fieldName}'][1]//a[contains(@class,'ddm-repeatable-add-button')]/../div//input)",
@@ -1669,17 +1680,6 @@ definition {
  			var i = MathUtil.sum("${i}", "1");
  		}
  	}
- 	
-	macro viewExpirationDateCP {
-		Panel.expandPanel(panel = "Schedule");
-
-		AssertNotChecked(locator1 = "Checkbox#NEVER_EXPIRE", value1 = "Never Expire");
-
-		AssertTextEquals(
-			locator1 = "TextInput#EXPIRATION_DATE",
-			value1 = "${expirationDate}"
-		);
-	}
 
 	macro viewLinkedAssetPGViaAP {
 		AssertClick.assertPartialTextClickAt(
