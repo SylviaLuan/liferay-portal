@@ -1673,8 +1673,8 @@ definition {
 
 		while (IsElementPresent(locator1 = "xpath=(//div[@data-fieldname='${fieldName}'])[${i}]")) {
  			AssertTextEquals(
- 				locator1="xpath=(//div[@data-fieldname='${fieldName}'][${i}]//a[contains(@class,'ddm-repeatable-add-button')]/../div//input)",
- 				value1="${ddlRecordFieldData${i}} "
+ 				locator1 = "xpath =(//div[@data-fieldname='${fieldName}'][${i}]//a[contains(@class,'ddm-repeatable-add-button')]/../div//input)",
+ 				value1 = "${ddlRecordFieldData${i}} "
  			);
 
  			var i = MathUtil.sum("${i}", "1");
