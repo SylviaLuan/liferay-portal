@@ -384,6 +384,7 @@ definition {
 	@description = "This ensures that the user can import the exported content page xliff file with 1.2 version."
 	@priority = 5
 	test CanImportExportedCustomizeXliffFile {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -476,6 +477,7 @@ definition {
 	@description = "This ensures that the user can import the exported content page xliff file with default version."
 	@priority = 5
 	test CanImportExportedDefaultXliffFile {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -558,6 +560,7 @@ definition {
 	@description = "This ensures that imported translation for a content page experience can be merged to the correct experience of a content page."
 	@priority = 5
 	test CanImportExportedTranslationForCorrespondingExperience {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -883,7 +886,7 @@ definition {
 	@description = "This ensures that user can select multiple zip files when importing translations for multiple content pages with different experience."
 	@priority = 5
 	test CanImportMultipleZipFilesWithExperiences {
-		property portal.acceptance = "false";
+		property portal.acceptance = "sylvia";
 
 		for (var i : list "1,2") {
 			JSONLayout.addPublicLayout(
@@ -1091,7 +1094,7 @@ definition {
 	@description = "This ensures that only the valid translation files can be imported from xlf and zip files."
 	@priority = 5
 	test CanPartiallyImportMultipleFiles {
-		property portal.acceptance = "false";
+		property portal.acceptance = "sylvia";
 
 		for (var i : list "1,2,3") {
 			JSONLayout.addPublicLayout(
@@ -1337,6 +1340,7 @@ definition {
 	@description = "This ensures that the user can import the translated content page file with Button fragment."
 	@priority = 5
 	test CanTranslateAndImportButtonFragment {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -1637,6 +1641,7 @@ definition {
 	@description = "This ensures that only the valid translation files can be uploaded from a zip file."
 	@priority = 5
 	test OnlyValidEntriesAreUploadedFromZip {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "ContentPage",

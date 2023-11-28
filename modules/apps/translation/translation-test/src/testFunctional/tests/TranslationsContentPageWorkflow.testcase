@@ -27,7 +27,7 @@ definition {
 	@description = "This ensures that an imported content page translation can be approved through the workflow."
 	@priority = 5
 	test CanApproveImportedTranslation {
-		property portal.acceptance = "true";
+		property portal.acceptance = "sylvia";
 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
@@ -148,6 +148,7 @@ definition {
 	@description = "This ensures that the imported translation for a content page experience can be approved through the workflow."
 	@priority = 5
 	test CanApproveImportedTranslationForExperience {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -254,6 +255,7 @@ definition {
 	@description = "This is a test for LPS-143036. This ensures that the draft translation can be approved after publishing."
 	@priority = 3
 	test CanApproveTranslationAfterSavingAsDraft {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -460,7 +462,7 @@ definition {
 	@description = "This ensures that translation files can be uploaded and resubmitted from a zip file after workflow is enabled."
 	@priority = 4
 	test CanResubmitImportedEntryFromZip {
-		property portal.acceptance = "true";
+		property portal.acceptance = "sylvia";
 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
@@ -627,7 +629,7 @@ definition {
 	@description = "This ensures that an imported translation can be resubmitted after being rejected."
 	@priority = 5
 	test CanResubmitRejectedImportedTranslation {
-		property portal.acceptance = "true";
+		property portal.acceptance = "sylvia";
 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
