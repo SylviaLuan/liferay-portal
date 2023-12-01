@@ -512,7 +512,7 @@ definition {
 	@description = "This ensures that the Translation app in the app manager can be deactivated and reactivated."
 	@priority = 3
 	test CanDeactivateAndActivateTranslation {
-		property portal.acceptance = "true";
+		property portal.acceptance = "sylvia";
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 		property testray.main.component.name = "Translations Management";

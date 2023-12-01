@@ -36,7 +36,7 @@ definition {
 	@description = "This ensures that an invalid Google translation service key cannot be saved."
 	@priority = 5
 	test CannotSaveWhenConfigurationIsInvalid {
-		property portal.acceptance = "true";
+		property portal.acceptance = "sylvia";
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -54,6 +54,7 @@ definition {
 	@description = "This ensures that the web content content can be translated independently"
 	@priority = 5
 	test CanTranslateContentFieldIndependently {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -96,6 +97,7 @@ definition {
 	@description = "This ensures that google translation can be used to auto-translate a content page."
 	@priority = 5
 	test CanTranslateContentPage {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -164,6 +166,7 @@ definition {
 	@description = "This ensures that the fragment filed on content page can be translated independently."
 	@priority = 5
 	test CanTranslateContentPageFieldIndependently {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -240,6 +243,7 @@ definition {
 	@description = "This ensures that the web content description can be translated independently"
 	@priority = 5
 	test CanTranslateDescriptionFieldIndependently {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -282,6 +286,7 @@ definition {
 	@description = "This ensures that the numeric and decimal fields of a customized web content can be translated independently"
 	@priority = 5
 	test CanTranslateNumericAndDecimalFieldsIndependently {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -367,6 +372,7 @@ definition {
 	@description = "This ensures that the rich text field of a customized web content can be translated independently"
 	@priority = 5
 	test CanTranslateRichTextFieldIndependently {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -437,6 +443,7 @@ definition {
 	@description = "This ensures that the text box field of a customized web content can be translated independently"
 	@priority = 5
 	test CanTranslateTextBoxFieldIndependently {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -510,6 +517,7 @@ definition {
 	@description = "This ensures that the text field of a customized web content can be translated independently"
 	@priority = 5
 	test CanTranslateTextFieldIndependently {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -580,6 +588,7 @@ definition {
 	@description = "This ensures that the web content title can be translated independently"
 	@priority = 5
 	test CanTranslateTitleFieldIndependently {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -628,7 +637,7 @@ definition {
 	@description = "This ensures that Google Translation can be used to auto-translate a Web Content into Japanese"
 	@priority = 5
 	test CanTranslateWCToJapaneseWithGoogle {
-		property portal.acceptance = "true";
+		property portal.acceptance = "sylvia";
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -667,6 +676,7 @@ definition {
 	@description = "The Auto Translate button should not appear in the side-by-side view after Google Translations are enabled then disabled"
 	@priority = 5
 	test CanViewTranslationAfterDisablingGoogleConfiguration {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -718,6 +728,7 @@ definition {
 	@description = "The Auto Translate button should be disabled when the fields are null."
 	@priority = 4
 	test TranslateButtonIsDisabledWhenFieldIsNull {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 

@@ -35,7 +35,7 @@ definition {
 	@priority = 5
 	test CannotTranslateToChineseWithoutPermissions {
 		property custom.properties = "jsonws.web.service.paths.excludes=";
-		property portal.acceptance = "true";
+		property portal.acceptance = "sylvia";
 
 		ContentPagesNavigator.openEditContentPage(
 			pageName = "Test Content Page Name",
@@ -93,6 +93,7 @@ definition {
 	@description = "This ensures that a translator can modify languages in translations when he has permissions for."
 	@priority = 5
 	test CanOnlyTranslateToSpanishWithExperience {
+        property portal.acceptance = "sylvia"; 
 		property custom.properties = "jsonws.web.service.paths.excludes=";
 
 		Permissions.setUpRegRoleLoginUserCP(
@@ -203,6 +204,7 @@ definition {
 	@description = "This ensures that a heading on a content page with a new experience can be translated and published properly."
 	@priority = 5
 	test CanPublishTranslatedHeadingWithExperience {
+        property portal.acceptance = "sylvia"; 
 		JSONSegmentsentry.addSegment(
 			fieldName = "Email Address",
 			groupName = "Test Site Name",
@@ -275,6 +277,7 @@ definition {
 	@description = "This ensures that a button on a content page can be translated and published properly."
 	@priority = 5
 	test CanTranslateAndPublishButtonFragment {
+        property portal.acceptance = "sylvia"; 
 		property custom.properties = "jsonws.web.service.paths.excludes=";
 
 		ContentPagesNavigator.openEditContentPage(
@@ -324,7 +327,7 @@ definition {
 	@priority = 5
 	test CanTranslateAndPublishHTMLFragment {
 		property custom.properties = "jsonws.web.service.paths.excludes=";
-		property portal.acceptance = "true";
+		property portal.acceptance = "sylvia";
 
 		ContentPagesNavigator.openEditContentPage(
 			pageName = "Test Content Page Name",
@@ -374,6 +377,7 @@ definition {
 	@description = "This ensures that the translated page field can be inherited by new experience."
 	@priority = 5
 	test TranslatedPageFieldCanBeInherited {
+        property portal.acceptance = "sylvia"; 
 		JSONSegmentsentry.addSegment(
 			fieldName = "Email Address",
 			groupName = "Test Site Name",

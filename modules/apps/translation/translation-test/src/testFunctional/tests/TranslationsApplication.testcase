@@ -27,6 +27,7 @@ definition {
 	@priority = 4
 	@refactordone
 	test CanDeleteDraftTranslation {
+        property portal.acceptance = "sylvia"; 
 		JSONWebcontent.addWebContent(
 			content = "WC WebContent Content",
 			description = "Description",
@@ -77,6 +78,7 @@ definition {
 	@priority = 5
 	@refactordone
 	test CanDeleteTranslation {
+        property portal.acceptance = "sylvia"; 
 		JSONWebcontent.addWebContent(
 			content = "WC WebContent Content",
 			description = "Description",
@@ -133,6 +135,7 @@ definition {
 	@priority = 5
 	@refactordone
 	test CanEditTranslation {
+        property portal.acceptance = "sylvia"; 
 		JSONWebcontent.addWebContent(
 			content = "WC WebContent Content",
 			description = "Description",
@@ -210,6 +213,7 @@ definition {
 	@priority = 5
 	@refactordone
 	test CanEditTranslationToNewLanguage {
+        property portal.acceptance = "sylvia"; 
 		JSONWebcontent.addWebContent(
 			content = "WC WebContent Content",
 			description = "Description",
@@ -294,6 +298,7 @@ definition {
 	@priority = 4
 	@refactordone
 	test CanTranslateWCAfterEditingStructure {
+        property portal.acceptance = "sylvia"; 
 		WebContentNavigator.openWebContentAdmin(siteURLKey = "guest");
 
 		NavItem.gotoStructures();
@@ -386,6 +391,7 @@ definition {
 	@priority = 3
 	@refactordone
 	test CanViewEntryModifiedDate {
+        property portal.acceptance = "sylvia"; 
 		JSONWebcontent.addWebContent(
 			content = "WC WebContent Content",
 			groupName = "Guest",
@@ -442,6 +448,7 @@ definition {
 	@description = "This test covers LPS-142411. It ensures that a translation entry is not shown after deleting translated content page with new experience."
 	@priority = 4
 	test EntryIsNotShownAfterDeletingTranslatedPage {
+        property portal.acceptance = "sylvia"; 
 		HeadlessSite.addSite(siteName = "Test Site Name");
 
 		JSONLayout.addPublicLayout(
@@ -500,6 +507,7 @@ definition {
 	@priority = 4
 	@refactordone
 	test WarningAppearsForTranslationAfterWCIsDeleted {
+        property portal.acceptance = "sylvia"; 
 		JSONWebcontent.addWebContent(
 			content = "WC WebContent Content",
 			groupName = "Guest",

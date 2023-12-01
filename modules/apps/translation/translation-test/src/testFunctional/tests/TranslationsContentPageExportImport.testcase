@@ -70,6 +70,7 @@ definition {
 	@description = "This ensures that the user can export multiple available languages for a single experience."
 	@priority = 5
 	test CanExportMultipleAvailableLanguagesForExperience {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -110,6 +111,7 @@ definition {
 	@description = "This ensures that the user can export multiple available languages for multiple experiences."
 	@priority = 5
 	test CanExportMultipleAvailableLanguagesForMultipleExperiences {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -150,7 +152,7 @@ definition {
 	@priority = 5
 	test CanExportMultiplePagesAllWithNewExperiences {
 		property custom.properties = "feature.flag.LPS-142736=true";
-		property portal.acceptance = "false";
+		property portal.acceptance = "sylvia";
 
 		for (var i : list "1,2") {
 			JSONLayout.addPublicLayout(
@@ -195,7 +197,7 @@ definition {
 	@priority = 5
 	test CanExportMultiplePagesNotAllWithNewExperiences {
 		property custom.properties = "feature.flag.LPS-142736=true";
-		property portal.acceptance = "false";
+		property portal.acceptance = "sylvia";
 
 		for (var i : list "1,2") {
 			JSONLayout.addPublicLayout(
@@ -246,7 +248,7 @@ definition {
 	@priority = 5
 	test CanExportMultiplePagesWithDefaultExperiences {
 		property custom.properties = "feature.flag.LPS-142736=true";
-		property portal.acceptance = "false";
+		property portal.acceptance = "sylvia";
 
 		for (var i : list "1,2") {
 			JSONLayout.addPublicLayout(
@@ -291,7 +293,7 @@ definition {
 	@priority = 5
 	test CanExportMultiplePagesWithMultipleLanguages {
 		property custom.properties = "feature.flag.LPS-142736=true";
-		property portal.acceptance = "false";
+		property portal.acceptance = "sylvia";
 
 		for (var i : list "1,2,3") {
 			JSONLayout.addPublicLayout(
@@ -325,6 +327,7 @@ definition {
 	@description = "This ensures that the user can export multiple available languages of default experience for translation."
 	@priority = 5
 	test CanExportWithMultipleLanguages {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "Translation Content Page",
@@ -354,6 +357,7 @@ definition {
 	@description = "This ensures that the user can export a single available language of default experience for translation."
 	@priority = 5
 	test CanExportWithSingleLanguage {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "Translation Content Page",
@@ -384,6 +388,7 @@ definition {
 	@description = "This ensures that the user can import the exported content page xliff file with 1.2 version."
 	@priority = 5
 	test CanImportExportedCustomizeXliffFile {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -476,6 +481,7 @@ definition {
 	@description = "This ensures that the user can import the exported content page xliff file with default version."
 	@priority = 5
 	test CanImportExportedDefaultXliffFile {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -558,6 +564,7 @@ definition {
 	@description = "This ensures that imported translation for a content page experience can be merged to the correct experience of a content page."
 	@priority = 5
 	test CanImportExportedTranslationForCorrespondingExperience {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -644,7 +651,7 @@ definition {
 	@description = "This ensures that the translation files contains multiple content pages can be imported from a zip."
 	@priority = 5
 	test CanImportMultiplePages {
-		property portal.acceptance = "false";
+		property portal.acceptance = "sylvia";
 
 		for (var i : list "1,2") {
 			JSONLayout.addPublicLayout(
@@ -770,7 +777,7 @@ definition {
 	@description = "This ensures that user can select multiple Xlf files when importing translations for multiple content pages."
 	@priority = 5
 	test CanImportMultipleXlfFiles {
-		property portal.acceptance = "false";
+		property portal.acceptance = "sylvia";
 
 		for (var i : list "1,2") {
 			JSONLayout.addPublicLayout(
@@ -883,7 +890,7 @@ definition {
 	@description = "This ensures that user can select multiple zip files when importing translations for multiple content pages with different experience."
 	@priority = 5
 	test CanImportMultipleZipFilesWithExperiences {
-		property portal.acceptance = "false";
+		property portal.acceptance = "sylvia";
 
 		for (var i : list "1,2") {
 			JSONLayout.addPublicLayout(
@@ -1000,6 +1007,7 @@ definition {
 	@description = "This ensures that the user can not import an invalid translation file."
 	@priority = 4
 	test CannotImportAnInvalidFile {
+        property portal.acceptance = "sylvia"; 
 		for (var num : list "1,2") {
 			JSONLayout.addPublicLayout(
 				groupName = "Guest",
@@ -1036,6 +1044,7 @@ definition {
 	@description = "This ensures that the translation for a content page experience can not be imported after deleting the experience."
 	@priority = 5
 	test CannotImportTranslationForDeletedExperience {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -1091,7 +1100,7 @@ definition {
 	@description = "This ensures that only the valid translation files can be imported from xlf and zip files."
 	@priority = 5
 	test CanPartiallyImportMultipleFiles {
-		property portal.acceptance = "false";
+		property portal.acceptance = "sylvia";
 
 		for (var i : list "1,2,3") {
 			JSONLayout.addPublicLayout(
@@ -1244,6 +1253,7 @@ definition {
 	@description = "This is a test for LPS-144152. This ensures that the updated draft translation can be published."
 	@priority = 3
 	test CanPublishUpdatedDraftTranslation {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -1337,6 +1347,7 @@ definition {
 	@description = "This ensures that the user can import the translated content page file with Button fragment."
 	@priority = 5
 	test CanTranslateAndImportButtonFragment {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -1428,6 +1439,7 @@ definition {
 	@description = "This ensures that the user can import the translated content page file with HTML fragment."
 	@priority = 5
 	test CanTranslateAndImportHTMLFragment {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "TranslationContentPage",
@@ -1512,7 +1524,7 @@ definition {
 	@description = "This ensures that users can view the info of the unsuccessfully imported content page translations in the downloaded CSV report."
 	@priority = 5
 	test CanViewUnsuccessfullyImportedTranslationsInfoInDownloadedCSVReport {
-		property portal.acceptance = "false";
+		property portal.acceptance = "sylvia";
 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
@@ -1586,7 +1598,7 @@ definition {
 	@description = "This ensures that only the default experiences are exported when exporting multiple content pages for translation."
 	@priority = 4
 	test OnlyDefaultExperiencesExportedWhenExportingMultiplePages {
-		property portal.acceptance = "false";
+		property portal.acceptance = "sylvia";
 
 		for (var i : list "1,2") {
 			JSONLayout.addPublicLayout(
@@ -1637,6 +1649,7 @@ definition {
 	@description = "This ensures that only the valid translation files can be uploaded from a zip file."
 	@priority = 5
 	test OnlyValidEntriesAreUploadedFromZip {
+        property portal.acceptance = "sylvia"; 
 		JSONLayout.addPublicLayout(
 			groupName = "Guest",
 			layoutName = "ContentPage",

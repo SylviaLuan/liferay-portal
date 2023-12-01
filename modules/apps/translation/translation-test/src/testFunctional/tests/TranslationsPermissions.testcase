@@ -27,6 +27,7 @@ definition {
 	@priority = 4
 	@refactordone
 	test CanTranslateWCToUnavailableLanguage {
+        property portal.acceptance = "sylvia"; 
 		property custom.properties = "jsonws.web.service.paths.excludes=";
 
 		JSONWebcontent.addWebContent(
@@ -93,6 +94,7 @@ definition {
 	@priority = 4
 	@refactordone
 	test CanTranslateWCWithoutLanguagesPermissions {
+        property portal.acceptance = "sylvia"; 
 		property custom.properties = "jsonws.web.service.paths.excludes=";
 
 		JSONWebcontent.addWebContent(
@@ -156,6 +158,7 @@ definition {
 	@priority = 4
 	@refactordone
 	test CanTranslateWCWithSpecificLanguagesPermissions {
+        property portal.acceptance = "sylvia"; 
 		property custom.properties = "jsonws.web.service.paths.excludes=";
 
 		JSONWebcontent.addWebContent(

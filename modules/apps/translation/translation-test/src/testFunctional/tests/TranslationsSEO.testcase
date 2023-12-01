@@ -30,6 +30,7 @@ definition {
 	@description = "This ensures that all languages hreflang tag will be displayed after disabling OTH from SEO settings."
 	@priority = 4
 	test CanViewAllHreflangTagsAfterDisabling {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -63,6 +64,7 @@ definition {
 	@description = "This ensures that all languages hreflang tag of an untranslated page can be viewed when the OTH is disabled."
 	@priority = 4
 	test CanViewPageDefaultHreflangTags {
+        property portal.acceptance = "sylvia"; 
 		var portalURL = PropsUtil.get("portal.url");
 
 		JSONLayout.addPublicLayout(
@@ -88,6 +90,7 @@ definition {
 	@description = "This ensures that only translated page hreflang is tag displayed when a user accesses an untranslated content page."
 	@priority = 5
 	test CanViewTranslatedLanguageHreflangTagOnContentPage {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -141,6 +144,7 @@ definition {
 	@description = "This ensures that only translated page hreflang tag is displayed when a user accesses an untranslated display page."
 	@priority = 5
 	test CanViewTranslatedLanguageHreflangTagOnDisplayPage {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -217,6 +221,7 @@ definition {
 	@description = "This ensures that only translated page hreflang tag is displayed when a user accesses an untranslated widget page."
 	@priority = 5
 	test CanViewTranslatedLanguageHreflangTagOnWidgetPage {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 

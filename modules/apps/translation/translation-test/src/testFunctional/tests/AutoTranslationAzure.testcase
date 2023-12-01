@@ -24,6 +24,7 @@ definition {
 	@description = "This ensures that Azure translation can be used to auto-translate a content page."
 	@priority = 5
 	test CanTranslateContentPage {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -58,6 +59,7 @@ definition {
 	@description = "This ensures that the fragment filed on content page can be translated independently."
 	@priority = 5
 	test CanTranslateContentPageFieldIndependently {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -114,6 +116,7 @@ definition {
 	@description = "This ensures that Azure translation can be used to auto-translate a web content."
 	@priority = 5
 	test CanTranslateWC {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -155,6 +158,7 @@ definition {
 	@description = "This ensures that the web content title and content filed can be translated independently"
 	@priority = 5
 	test CanTranslateWCFieldIndependently {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 

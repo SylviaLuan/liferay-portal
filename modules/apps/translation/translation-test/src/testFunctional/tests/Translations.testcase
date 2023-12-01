@@ -27,6 +27,7 @@ definition {
 	@priority = 4
 	@refactordone
 	test CanViewOptionsWithAllLanguages {
+        property portal.acceptance = "sylvia"; 
 		WebContentNavigator.openWebContentAdmin(siteURLKey = "guest");
 
 		NavItem.gotoStructures();
@@ -89,6 +90,7 @@ definition {
 	@priority = 4
 	@refactordone
 	test CanViewOptionsWithOneMoreLanguage {
+        property portal.acceptance = "sylvia"; 
 		JSONWebcontent.addWebContent(
 			content = "Web Content Content",
 			groupName = "Guest",
@@ -121,6 +123,7 @@ definition {
 	@priority = 4
 	@refactordone
 	test CanViewTranslatedFieldContentAfterEditing {
+        property portal.acceptance = "sylvia"; 
 		WebContentNavigator.openWebContentAdmin(siteURLKey = "guest");
 
 		NavItem.gotoStructures();

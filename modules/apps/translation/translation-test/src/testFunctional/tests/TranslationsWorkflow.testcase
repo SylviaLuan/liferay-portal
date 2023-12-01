@@ -27,6 +27,7 @@ definition {
 	@priority = 5
 	@refactordone
 	test CanApproveEntry {
+        property portal.acceptance = "sylvia"; 
 		property custom.properties = "jsonws.web.service.paths.excludes=";
 
 		JSONWebcontent.addWebContent(
@@ -133,6 +134,7 @@ definition {
 	@priority = 4
 	@refactordone
 	test CanApproveEntryFromPartiallyImportedZip {
+        property portal.acceptance = "sylvia"; 
 		JSONWebcontent.addWebContent(
 			content = "WebContent",
 			description = "Description",
@@ -263,6 +265,7 @@ definition {
 	@priority = 5
 	@refactordone
 	test CanApproveImportToWebContent {
+        property portal.acceptance = "sylvia"; 
 		JSONWebcontent.addWebContent(
 			content = "WebContent",
 			description = "Description",
@@ -350,6 +353,7 @@ definition {
 	@priority = 5
 	@refactordone
 	test CanApproveNewTranslationForPublishedWC {
+        property portal.acceptance = "sylvia"; 
 		property custom.properties = "jsonws.web.service.paths.excludes=";
 
 		JSONWebcontent.addWebContent(
@@ -452,6 +456,7 @@ definition {
 	@priority = 4
 	@refactordone
 	test CanDeletePendingTranslation {
+        property portal.acceptance = "sylvia"; 
 		JSONWebcontent.addWebContent(
 			content = "WC WebContent Content",
 			description = "Description",
@@ -513,6 +518,7 @@ definition {
 	@priority = 5
 	@refactordone
 	test CanRejectandResubmitImportToDraftWebContent {
+        property portal.acceptance = "sylvia"; 
 		JSONWebcontent.addWebContent(
 			content = "WebContent",
 			description = "Description",
@@ -635,6 +641,7 @@ definition {
 	@priority = 5
 	@refactordone
 	test CanRejectTranslationsForDraftAndApprovedWC {
+        property portal.acceptance = "sylvia"; 
 		for (var resourceValue : list "Translation,Web Content Article") {
 			Workflow.openWorkflowAdmin(siteURLKey = "guest");
 
@@ -768,6 +775,7 @@ definition {
 	@priority = 4
 	@refactordone
 	test CanResubmitImportedEntryFromZipFile {
+        property portal.acceptance = "sylvia"; 
 		property test.liferay.virtual.instance = "false";
 		property test.run.type = "single";
 
@@ -907,6 +915,7 @@ definition {
 	@priority = 5
 	@refactordone
 	test CanResubmitRejectedEntries {
+        property portal.acceptance = "sylvia"; 
 		property custom.properties = "jsonws.web.service.paths.excludes=";
 
 		JSONWebcontent.addWebContent(
@@ -1108,6 +1117,7 @@ definition {
 	@priority = 5
 	@refactordone
 	test CanUpdateSameTranslationAsAnotherUser {
+        property portal.acceptance = "sylvia"; 
 		property custom.properties = "jsonws.web.service.paths.excludes=";
 
 		JSONWebcontent.addWebContent(
@@ -1193,6 +1203,7 @@ definition {
 	@priority = 5
 	@refactordone
 	test CanViewUpdatedWCSubmissionAfterApprovedTranslation {
+        property portal.acceptance = "sylvia"; 
 		for (var resourceValue : list "Translation,Web Content Article") {
 			Workflow.openWorkflowAdmin(siteURLKey = "guest");
 
